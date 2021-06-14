@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -758,7 +758,7 @@
 				};
 			};
 			buildConfigurationList = 754BE44F19693E190098E6F3 /* Build configuration list for PBXProject "CryptoSwift" */;
-			compatibilityVersion = "Xcode 8.0";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -1003,6 +1003,47 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		32F1CE9E267701BA00528BC7 /* Deploy */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75211FAA20724A0F004E41F8 /* Project-Release.xcconfig */;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Deploy;
+		};
+		32F1CE9F267701BA00528BC7 /* Deploy */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75211FAC20724A0F004E41F8 /* CryptoSwift-Release.xcconfig */;
+			buildSettings = {
+				MACH_O_TYPE = staticlib;
+			};
+			name = Deploy;
+		};
+		32F1CEA0267701BA00528BC7 /* Deploy */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Deploy;
+		};
+		32F1CEA1267701BA00528BC7 /* Deploy */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Deploy;
+		};
+		32F1CEA2267701BA00528BC7 /* Deploy */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Deploy;
+		};
+		32F1CEA3267701BA00528BC7 /* Deploy */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				SDKROOT = iphoneos;
+			};
+			name = Deploy;
+		};
 		75211FA1207249D8004E41F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1026,6 +1067,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 75211FB020724A10004E41F8 /* Project-Debug.xcconfig */;
 			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 			};
 			name = Debug;
 		};
@@ -1033,6 +1075,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 75211FAA20724A0F004E41F8 /* Project-Release.xcconfig */;
 			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 			};
 			name = Release;
 		};
@@ -1040,6 +1083,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 75211FAF20724A10004E41F8 /* CryptoSwift-Debug.xcconfig */;
 			buildSettings = {
+				MACH_O_TYPE = staticlib;
 			};
 			name = Debug;
 		};
@@ -1047,6 +1091,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 75211FAC20724A0F004E41F8 /* CryptoSwift-Release.xcconfig */;
 			buildSettings = {
+				MACH_O_TYPE = staticlib;
 			};
 			name = Release;
 		};
@@ -1088,6 +1133,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 75211FB220724A10004E41F8 /* Project-Shared.xcconfig */;
 			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 			};
 			name = Test;
 		};
@@ -1095,6 +1141,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 75211FB420724A10004E41F8 /* CryptoSwift-Test.xcconfig */;
 			buildSettings = {
+				MACH_O_TYPE = staticlib;
 			};
 			name = Test;
 		};
@@ -1132,6 +1179,7 @@
 			buildConfigurations = (
 				75211FA1207249D8004E41F8 /* Debug */,
 				75211FA2207249D8004E41F8 /* Release */,
+				32F1CEA0267701BA00528BC7 /* Deploy */,
 				75211FA3207249D8004E41F8 /* Test */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -1142,6 +1190,7 @@
 			buildConfigurations = (
 				754BE46919693E190098E6F3 /* Debug */,
 				754BE46A19693E190098E6F3 /* Release */,
+				32F1CE9E267701BA00528BC7 /* Deploy */,
 				756B66AA1F6AAFDB00DEC41C /* Test */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -1152,6 +1201,7 @@
 			buildConfigurations = (
 				754BE46C19693E190098E6F3 /* Debug */,
 				754BE46D19693E190098E6F3 /* Release */,
+				32F1CE9F267701BA00528BC7 /* Deploy */,
 				756B66AB1F6AAFDB00DEC41C /* Test */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -1162,6 +1212,7 @@
 			buildConfigurations = (
 				754BE46F19693E190098E6F3 /* Debug */,
 				754BE47019693E190098E6F3 /* Release */,
+				32F1CEA1267701BA00528BC7 /* Deploy */,
 				756B66AC1F6AAFDB00DEC41C /* Test */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -1172,6 +1223,7 @@
 			buildConfigurations = (
 				7564F05D2072EAEB00CA5A96 /* Debug */,
 				7564F05E2072EAEB00CA5A96 /* Release */,
+				32F1CEA3267701BA00528BC7 /* Deploy */,
 				7564F05F2072EAEB00CA5A96 /* Test */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -1182,6 +1234,7 @@
 			buildConfigurations = (
 				7595C14F2072E48C00EA1A5F /* Debug */,
 				7595C1502072E48C00EA1A5F /* Release */,
+				32F1CEA2267701BA00528BC7 /* Deploy */,
 				7595C1512072E48C00EA1A5F /* Test */,
 			);
 			defaultConfigurationIsVisible = 0;
